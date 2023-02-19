@@ -1,0 +1,9 @@
+{
+  "404": "Page not found",
+  "404help": "The current page doesn't exist. Please visit another page",
+  "500": "Unknown error",
+  "chart": "Chart",
+  "home": "Home",
+  "movies": "Movies",
+  "notifications": "Notifications"
+}

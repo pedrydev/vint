@@ -1,0 +1,6 @@
+{
+  "title": "Provide your credentials",
+  "username": "Username",
+  "password": "Password",
+  "invalid-credentials": "Invalid credentials. Try admin/admin"
+}

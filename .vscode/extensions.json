@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "bradlc.vscode-tailwindcss",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "joshbolduc.commitlint",
+    "liamhammett.inline-parameters",
+    "lokalise.i18n-ally",
+    "pflannery.vscode-versionlens",
+    "robertz.code-snapshot",
+    "stylelint.vscode-stylelint",
+    "usernamehw.errorlens",
+    "wix.vscode-import-cost",
+  ]
+}

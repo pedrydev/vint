@@ -1,0 +1,11 @@
+{
+  "help": "Ejemplo de HttpClient",
+  "title": "Productos",
+  "productTable": {
+    "title": "Título",
+    "description": "Descripción",
+    "category": "Categoría",
+    "price": "Precio",
+    "rating": "Valoración"
+  }
+}
