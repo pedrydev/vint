@@ -9,7 +9,7 @@ interface RouteConfig {
   loader?: LoaderFunction;
   path?: string;
   parent?: string;
-  children?: [RouteConfig];
+  children?: RouteConfig[];
 }
 
 export default RouteConfig;
