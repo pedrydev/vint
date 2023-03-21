@@ -22,6 +22,7 @@ import {
   AiOutlineBell,
   AiOutlineHome,
   AiOutlineLogout,
+  AiOutlineMacCommand,
   AiOutlineQuestion,
   AiOutlineUser,
   AiOutlineYoutube,
@@ -76,6 +77,12 @@ export default function AppLayout() {
                 label: tRoutes('chart'),
                 key: 3,
                 onClick: () => navigate('chart'),
+              },
+              {
+                icon: <AiOutlineMacCommand />,
+                label: tRoutes('games'),
+                key: 4,
+                onClick: () => navigate('games'),
               },
             ]}
             mode='inline'
