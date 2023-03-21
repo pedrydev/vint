@@ -20,6 +20,8 @@ import { useTranslation } from 'react-i18next';
 import {
   AiOutlineBarChart,
   AiOutlineBell,
+  AiOutlineFullscreen,
+  AiOutlineFullscreenExit,
   AiOutlineHome,
   AiOutlineLogout,
   AiOutlineMacCommand,
@@ -49,6 +51,13 @@ export default function AppLayout() {
   const navigate = useNavigate();
   const helpNode = useRef<ReactNode | null>(null);
   const { modal } = App.useApp();
+  const [fullscreen, { toggle: toggleFullscreen }] = useToggle();
+
+  const handleToggleFullscreen = async () => {
+    if (fullscreen) await document.exitFullscreen();
+    else await document.getElementById('root')?.requestFullscreen();
+    toggleFullscreen();
+  };
 
   return (
     <Layout className='min-h-screen'>
@@ -95,6 +104,12 @@ export default function AppLayout() {
           <div className='flex items-center h-full justify-between'>
             <Typography.Title level={3}>{import.meta.env.VITE_APP_NAME}</Typography.Title>
             <Space size='small'>
+              <Button
+                icon={fullscreen ? <AiOutlineFullscreenExit /> : <AiOutlineFullscreen />}
+                onClick={handleToggleFullscreen}
+                shape='circle'
+                type='text'
+              />
               <Tooltip title={t('notifications')}>
                 <Badge count={6} overflowCount={5}>
                   <Link to='notifications'>
